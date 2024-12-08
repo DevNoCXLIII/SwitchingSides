@@ -1,0 +1,32 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="SwitchingSides.App"
+             xmlns:local="using:SwitchingSides"
+             xmlns:sty="clr-namespace:FluentAvalonia.Styling;assembly=FluentAvalonia"
+             RequestedThemeVariant="Light">
+             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+
+    <Application.DataTemplates>
+        <local:ViewLocator/>
+    </Application.DataTemplates>
+  
+    <Application.Styles>
+        <sty:FluentAvaloniaTheme CustomAccentColor="#227B94" />
+        <StyleInclude Source="avares://SwitchingSides/Styles/AppDefaultStyles.axaml"/>
+    </Application.Styles>
+             
+    <Application.Resources>
+        <!--Colors-->
+        <SolidColorBrush Color="#9A9A9A" x:Key="GreyColor"/>
+        <SolidColorBrush Color="#227B94" x:Key="PrimaryColor"/>
+        <SolidColorBrush Color="#78B7D0" x:Key="SecondaryColor"/>
+        <SolidColorBrush Color="#FFDC7E" x:Key="AccentColor"/>
+        <SolidColorBrush Color="#FBFBFB" x:Key="WhiteColor"/>
+        <SolidColorBrush Color="#F5F5F5" x:Key="ElevatedWhiteColor"/>
+        <SolidColorBrush Color="#353935" x:Key="TextColor"/>
+        
+        <!--Fonts-->
+        <FontFamily x:Key="Phosphor">/Assets/Fonts/Phosphor.ttf#Phosphor</FontFamily>
+        <FontFamily x:Key="Phosphor-Fill">/Assets/Fonts/Phosphor-Fill.ttf#Phosphor-Fill</FontFamily>
+    </Application.Resources>
+</Application>
